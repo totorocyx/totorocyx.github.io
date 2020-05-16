@@ -358,10 +358,8 @@
           
 
   
-    <div class="comments" id="comments">
-      <div id="gitalk-container"></div>
-    </div>
-
+   <div id="gitalk-container"></div>
+   
   
 
 
@@ -627,24 +625,20 @@
 
 
 
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
-          clientID: 'c0242bc3e3831652bc4f',
-          clientSecret: '18aa4f1e86a8f0ff65c9727bc7934ef98630f895',
-          repo: 'totorocyx.github.io',
-          owner: 'totorocyx',
-          admin: [''],
-          id:'_20200515232105',
-          labels: '',
-          perPage: 10,
-          pagerDirection: 'last',
-          createIssueManually: ,
-          distractionFreeMode: false
-        })
-        gitalk.render('gitalk-container')
-       </script>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+ <script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: 'c0242bc3e3831652bc4f',
+        clientSecret: '18aa4f1e86a8f0ff65c9727bc7934ef98630f895',
+        repo: 'totorocyx.github.io',
+        owner: '',
+        admin: [''],
+        id: location.pathname,
+        distractionFreeMode: 'false'
+      })
+      gitalk.render('gitalk-container')
+     </script>
 
 
 
