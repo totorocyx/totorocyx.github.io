@@ -634,8 +634,12 @@
         repo: 'totorocyx.github.io',
         owner: 'totorocyx',
         admin: ['totorocyx'],
-        id: location.pathname,
-        distractionFreeMode: 'false'
+        id: md5(location.pathname),
+        labels: 'gitalk',
+        perPage: 10,
+        pagerDirection: 'last',
+        createIssueManually: false,
+        distractionFreeMode: false
       })
       gitalk.render('gitalk-container')
      </script>
