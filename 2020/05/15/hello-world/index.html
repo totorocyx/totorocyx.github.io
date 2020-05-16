@@ -636,6 +636,7 @@
         owner: 'totorocyx',
         admin: ['totorocyx'],
         id: md5(location.pathname),
+        labels: 'gitalk'.split(',').filter(l => l),
         perPage: 10,
         pagerDirection: 'last',
         createIssueManually: false,
